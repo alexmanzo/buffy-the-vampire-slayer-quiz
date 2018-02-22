@@ -96,25 +96,28 @@ function questionTemplate() {
 				<li>Score: <span class="score">${correctAnswers}</span></li>
 			</ul>
 		</div>
-		<h3>${questionList[questionNum].question}</h3>
-		<form>
+	<form>
+			<fieldset>
+				<legend>${questionList[questionNum].question}</legend>
+
 				<label for="answer-1" class="">
-					<input type="radio" name="answer" id="answer-1" required>${questionList[questionNum].answers[0]}
+					<input type="radio" name="answer-1" id="answer-1" required>${questionList[questionNum].answers[0]}
 				</label>
 				<br>
 				<label for="answer-2" class="">
-					<input type="radio" name="answer" id="answer-2" required>${questionList[questionNum].answers[1]}
+					<input type="radio" name="answer-2" id="answer-2" required>${questionList[questionNum].answers[1]}
 				</label>
 				<br>
 				<label for="answer-3" class="">
-					<input type="radio" name="answer" id="answer-3" required>${questionList[questionNum].answers[2]}
+					<input type="radio" name="answer-3" id="answer-3" required>${questionList[questionNum].answers[2]}
 				</label>
 				<br>
 				<label for="answer-4" class="">
-					<input type="radio" name="answer" id="answer-4" required>${questionList[questionNum].answers[3]}
+					<input type="radio" name="answer-4" id="answer-4" required>${questionList[questionNum].answers[3]}
 				</label>
 				<br>
 				<button class="question-submit">Submit</button>
+			</fieldset>	
 		</form>
 	</div>`
 	}

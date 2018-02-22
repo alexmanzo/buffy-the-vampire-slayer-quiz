@@ -28,7 +28,7 @@ h1 {
 	font-size: 48px;
 }
 
-h3 {
+h3, legend {
 	font-weight: normal;
 	font-size: 32px;
 }
@@ -66,6 +66,9 @@ button:hover {
 
 /* Question Styling */
 
+form, fieldset {
+	border: none;
+}
 
 input[type="radio"]{
 	margin-left: auto;
